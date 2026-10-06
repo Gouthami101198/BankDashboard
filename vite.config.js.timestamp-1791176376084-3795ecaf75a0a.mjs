@@ -1,0 +1,16 @@
+// vite.config.js
+import { defineConfig } from "file:///D:/Bank%20Dashboard/node_modules/vite/dist/node/index.js";
+import react from "file:///D:/Bank%20Dashboard/node_modules/@vitejs/plugin-react/dist/index.js";
+import tailwindcss from "file:///D:/Bank%20Dashboard/node_modules/@tailwindcss/vite/dist/index.mjs";
+import { viteSingleFile } from "file:///D:/Bank%20Dashboard/node_modules/vite-plugin-singlefile/dist/esm/index.js";
+var vite_config_default = defineConfig({
+  plugins: [
+    tailwindcss(),
+    react(),
+    ...process.env.SINGLE ? [viteSingleFile()] : []
+  ]
+});
+export {
+  vite_config_default as default
+};
+//# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsidml0ZS5jb25maWcuanMiXSwKICAic291cmNlc0NvbnRlbnQiOiBbImNvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9kaXJuYW1lID0gXCJEOlxcXFxCYW5rIERhc2hib2FyZFwiO2NvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9maWxlbmFtZSA9IFwiRDpcXFxcQmFuayBEYXNoYm9hcmRcXFxcdml0ZS5jb25maWcuanNcIjtjb25zdCBfX3ZpdGVfaW5qZWN0ZWRfb3JpZ2luYWxfaW1wb3J0X21ldGFfdXJsID0gXCJmaWxlOi8vL0Q6L0JhbmslMjBEYXNoYm9hcmQvdml0ZS5jb25maWcuanNcIjtpbXBvcnQgeyBkZWZpbmVDb25maWcgfSBmcm9tICd2aXRlJztcbmltcG9ydCByZWFjdCBmcm9tICdAdml0ZWpzL3BsdWdpbi1yZWFjdCc7XG5pbXBvcnQgdGFpbHdpbmRjc3MgZnJvbSAnQHRhaWx3aW5kY3NzL3ZpdGUnO1xuaW1wb3J0IHsgdml0ZVNpbmdsZUZpbGUgfSBmcm9tICd2aXRlLXBsdWdpbi1zaW5nbGVmaWxlJztcblxuLy8gYG5wbSBydW4gYnVpbGRgIC0+IG5vcm1hbCBtdWx0aS1maWxlIGJ1aWxkLlxuLy8gYFNJTkdMRT0xIG5wbSBydW4gYnVpbGRgIC0+IG9uZSBzZWxmLWNvbnRhaW5lZCBkaXN0L2luZGV4Lmh0bWwgKHVzZWQgZm9yIHRoZSBwcmV2aWV3KS5cbmV4cG9ydCBkZWZhdWx0IGRlZmluZUNvbmZpZyh7XG4gIHBsdWdpbnM6IFtcbiAgICB0YWlsd2luZGNzcygpLFxuICAgIHJlYWN0KCksXG4gICAgLi4uKHByb2Nlc3MuZW52LlNJTkdMRSA/IFt2aXRlU2luZ2xlRmlsZSgpXSA6IFtdKSxcbiAgXSxcbn0pO1xuIl0sCiAgIm1hcHBpbmdzIjogIjtBQUEyTyxTQUFTLG9CQUFvQjtBQUN4USxPQUFPLFdBQVc7QUFDbEIsT0FBTyxpQkFBaUI7QUFDeEIsU0FBUyxzQkFBc0I7QUFJL0IsSUFBTyxzQkFBUSxhQUFhO0FBQUEsRUFDMUIsU0FBUztBQUFBLElBQ1AsWUFBWTtBQUFBLElBQ1osTUFBTTtBQUFBLElBQ04sR0FBSSxRQUFRLElBQUksU0FBUyxDQUFDLGVBQWUsQ0FBQyxJQUFJLENBQUM7QUFBQSxFQUNqRDtBQUNGLENBQUM7IiwKICAibmFtZXMiOiBbXQp9Cg==
